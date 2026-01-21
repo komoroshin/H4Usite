@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Healthy4U - Your Health Operating System. The AI platform proven to cut admin time by 97% and increase patient capacity by 30%.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Healthy4U | Your Health Operating System</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+          </svg>
+        </div>
+        <span>Healthy4U</span>
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="casestudy.html" class="nav-link">Case Studies</a>
+        <a href="#services" class="nav-link">Platform</a>
+        <a href="#pillars" class="nav-link">Why Us</a>
+        <a href="#ecosystem" class="nav-link">Ecosystem</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="https://medical-b2b.healthy4u.world/auth/login" class="btn btn-primary" target="_blank">Schedule a
+          Demo</a>
+      </div>
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <div
+            style="display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); background: var(--color-bg-white); border: 1px solid var(--color-border); border-radius: var(--radius-full); margin-bottom: var(--space-6); font-size: var(--font-size-sm); color: var(--color-text-secondary); box-shadow: var(--shadow-sm);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-green)"
+              stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <span style="font-weight: 500;">Proven live at GavCure Clinic, Israel</span>
+          </div>
+          <p class="tagline hero-tagline">Your Health Operating System</p>
+          <h1 class="headline-xl hero-headline">One AI Platform Connecting<br>Patients, Clinics, and Care</h1>
+          <p class="subheadline hero-subheadline">
+            Healthy4U is an AI-native healthcare platform that unifies patient data, clinical workflows, and continuous
+            monitoring into one intelligent system.
+          </p>
+          <div class="hero-ctas">
+            <a href="https://medical-b2b.healthy4u.world/auth/login" class="btn btn-primary btn-lg" target="_blank">See
+              AI in Action</a>
+            <a href="casestudy.html" class="btn btn-secondary btn-lg">See the Case Study</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <img src="hero_new.jpg" alt="Healthy4U AI Platform Infographic" class="hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar / Clinical Proof Section -->
+  <section class="trust-section section" id="trust">
+    <div class="container">
+      <div class="trust-header reveal">
+        <div class="trust-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          <span>Proven at GavCure Clinic, Israel</span>
+        </div>
+        <h2 class="headline-lg">Built by Practitioners.<br>Proven in Practice.</h2>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-value" data-target="97">-97%</div>
+          <div class="stat-label">Physician time spent on<br>medical history intake</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value" data-target="30">+30%</div>
+          <div class="stat-label">More patients per day<br>without extending hours</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value">+20-35%</div>
+          <div class="stat-label">Increase in treatment<br>plan acceptance</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value" data-target="100">100%</div>
+          <div class="stat-label">Appointments start with<br>structured patient overview</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section with Toggle -->
+  <section class="services-section section" id="services">
+    <div class="container">
+      <div class="section-centered reveal">
+        <p class="tagline">Platform Solutions</p>
+        <h2 class="headline-lg" style="margin-bottom: var(--space-4);">One Platform. Two Perspectives.</h2>
+        <p class="subheadline" style="margin: 0 auto var(--space-8);">Whether you're a patient managing your health or a
+          clinic optimizing care delivery, Healthy4U adapts to your needs.</p>
+      </div>
+
+      <div class="toggle-container reveal">
+        <div class="toggle-wrapper">
+          <button class="toggle-btn active" data-target="patients" id="togglePatients">For Patients</button>
+          <button class="toggle-btn" data-target="clinics" id="toggleClinics">For Clinics</button>
+        </div>
+      </div>
+
+      <!-- Patients Content -->
+      <div class="services-content active" id="patientsContent">
+        <div class="service-card reveal">
+          <div class="service-info">
+            <h3 class="service-headline">Your Health, Continuously Understood.</h3>
+            <p class="service-description">A personal AI assistant that knows your health history, tracks your vitals,
+              and keeps you connected to care—24/7.</p>
+            <ul class="service-features">
+              <li class="service-feature">
+                <span class="feature-icon">✓</span>
+                <span>Personal AI health assistant available anytime</span>
+              </li>
+              <li class="service-feature">
+                <span class="feature-icon">✓</span>
+                <span>24/7 health tracking (Apple/Android Health integration)</span>
+              </li>
+              <li class="service-feature">
+                <span class="feature-icon">✓</span>
+                <span>Symptoms, vitals, and medical files in one place</span>
+              </li>
+              <li class="service-feature">
+                <span class="feature-icon">✓</span>
+                <span>Voice-controlled for hands-free access</span>
+              </li>
+            </ul>
+            <div class="app-store-buttons" style="display: flex; gap: 12px; margin-top: 24px;">
+              <a href="https://apps.apple.com/us/app/healthy4u-ai-health-assistant/id6742141790" target="_blank">
+                <img
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1732665600"
+                  alt="Download on the App Store" style="height: 40px;">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=world.healthy4u.mobile&pli=1" target="_blank">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  alt="Get it on Google Play" style="height: 56px; margin-top: -8px;">
+              </a>
+            </div>
+          </div>
+          <div class="service-visual">
+            <img src="smartphone_user.jpg" alt="Patient using Healthy4U app" class="visual-image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Clinics Content -->
+      <div class="services-content" id="clinicsContent">
+        <div class="service-card reveal">
+          <div class="service-info">
+            <h3 class="service-headline">Run Smarter Care. Increase Revenue.</h3>
+            <p class="service-description">Free your staff from paperwork. Let AI handle documentation while you focus
+              on what matters—patient care.</p>
+            <ul class="service-features">
+              <li class="service-feature">
+                <span class="feature-icon">✓</span>
+                <span>AI-Scribe for automatic recording & transcription</span>
+              </li>
+              <li class="service-feature">
+                <span class="feature-icon">✓</span>
+                <span>Smart intake forms that patients complete beforehand</span>
+              </li>
+              <li class="service-feature">
+                <span class="feature-icon">✓</span>
+                <span>FHIR/HL7 standardized health records</span>
+              </li>
+              <li class="service-feature">
+                <span class="feature-icon">✓</span>
+                <span>Built-in telemedicine capabilities</span>
+              </li>
+            </ul>
+          </div>
+          <img src="clinic_user.jpg" alt="Doctor with patient" class="visual-image">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Value Pillars Section -->
+  <section class="pillars-section section" id="pillars">
+    <div class="container">
+      <div class="pillars-header reveal">
+        <p class="tagline">Why Healthy4U</p>
+        <h2 class="headline-lg">Four Pillars of<br>Intelligent Healthcare</h2>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card reveal">
+          <div class="pillar-icon">🚀</div>
+          <h3 class="pillar-title">Clinics Run Smarter</h3>
+          <p class="pillar-description">Focus on diagnosis while AI handles documentation and intake. Reduce
+            administrative burden and see more patients without burnout.</p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="pillar-icon">🔗</div>
+          <h3 class="pillar-title">Continuous Patient Connection</h3>
+          <p class="pillar-description">AI-guided support keeps patients engaged between episodic visits. Build lasting
+            relationships that improve outcomes.</p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="pillar-icon">📋</div>
+          <h3 class="pillar-title">Unified Health Record</h3>
+          <p class="pillar-description">Replace fragmented systems with a single, auto-updating medical record. Complete
+            patient history at your fingertips.</p>
+        </div>
+        <div class="pillar-card reveal">
+          <div class="pillar-icon">🤖</div>
+          <h3 class="pillar-title">Scalable AI</h3>
+          <p class="pillar-description">Multi-agent system designed to assist—not replace—clinicians. Clinical-grade
+            safeguards ensure trust and accuracy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem Section -->
+  <section class="ecosystem-section section" id="ecosystem">
+    <div class="container">
+      <div class="ecosystem-header reveal">
+        <p class="tagline">The Platform</p>
+        <h2 class="headline-lg">The Healthy4U Ecosystem</h2>
+      </div>
+
+      <div class="ecosystem-grid">
+        <div class="ecosystem-tile purple reveal">
+          <div class="tile-icon">🧠</div>
+          <h3 class="tile-title">Intelligence Layer</h3>
+          <p class="tile-description">Multi-agent AI system with patient memory engine for personalized care insights.
+          </p>
+        </div>
+        <div class="ecosystem-tile cyan reveal">
+          <div class="tile-icon">📱</div>
+          <h3 class="tile-title">Patient App</h3>
+          <p class="tile-description">iOS/Android app for tracking symptoms, vitals, and daily health routines.</p>
+        </div>
+        <div class="ecosystem-tile blue reveal">
+          <div class="tile-icon">💻</div>
+          <h3 class="tile-title">Clinic Platform</h3>
+          <p class="tile-description">Clinical workspace for record management and comprehensive doctor dashboards.</p>
+        </div>
+        <div class="ecosystem-tile green reveal">
+          <div class="tile-icon">🔌</div>
+          <h3 class="tile-title">Interoperability</h3>
+          <p class="tile-description">EHR/EMR compatible with API-first architecture and secure, clinic-owned databases.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section section" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <p class="tagline">What They Say</p>
+        <h2 class="headline-lg">Trusted by Clinicians & Patients</h2>
+      </div>
+
+      <div class="toggle-container reveal">
+        <div class="toggle-wrapper">
+          <button class="toggle-btn active" data-target="clinicians" id="toggleClinicians">Clinicians</button>
+          <button class="toggle-btn" data-target="patients-testimonials"
+            id="togglePatientsTestimonials">Patients</button>
+        </div>
+      </div>
+
+      <!-- Clinicians Testimonials -->
+      <div class="testimonials-content active" id="cliniciansContent">
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <p class="testimonial-quote">The documentation overhead is gone. I can finally focus entirely on my patients
+              during consultations. It's transformed how I practice.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">VG</div>
+              <div class="author-info">
+                <div class="author-name">Dr. Victoria Gale</div>
+                <div class="author-title">Internal Medicine, GavCure</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p class="testimonial-quote">We've increased profitability by 30% without adding a single staff member. The
+              AI handles what used to take hours.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DS</div>
+              <div class="author-info">
+                <div class="author-name">Dr. Daniel Surrey</div>
+                <div class="author-title">Clinic Director</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p class="testimonial-quote">Every appointment now starts with complete context. I know my patient's history
+              before they even sit down.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MK</div>
+              <div class="author-info">
+                <div class="author-name">Dr. Maya Klein</div>
+                <div class="author-title">Family Practice</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patients Testimonials -->
+      <div class="testimonials-content" id="patientsTestimonialsContent">
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <p class="testimonial-quote">It feels like having a personal health assistant in my pocket. The AI remembers
+              everything and helps me stay on track.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SL</div>
+              <div class="author-info">
+                <div class="author-name">Sarah L.</div>
+                <div class="author-title">Patient, 2 years</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p class="testimonial-quote">My doctor already knows my history when I walk in. No more repeating myself
+              every visit. It makes the whole experience so much better.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MR</div>
+              <div class="author-info">
+                <div class="author-name">Michael R.</div>
+                <div class="author-title">Patient, 1 year</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <p class="testimonial-quote">Between visits, I still feel connected to my care team. The app keeps me
+              accountable and my doctor informed.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">EA</div>
+              <div class="author-info">
+                <div class="author-name">Elena A.</div>
+                <div class="author-title">Patient, 6 months</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="cta-section section" id="cta">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2 class="headline-lg cta-headline">Make Health Intelligent—<br>with Healthy4U</h2>
+        <p class="subheadline cta-subheadline">Join the clinics and patients already transforming healthcare with AI.
+          Book a demo today and see the difference.</p>
+        <div class="hero-ctas">
+          <a href="https://medical-b2b.healthy4u.world/auth/login" class="btn btn-primary btn-lg" target="_blank">See
+            AI in Action</a>
+          <a href="casestudy.html" class="btn btn-secondary btn-lg">Read the Case Study</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="nav-logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <span>Healthy4U</span>
+          </div>
+          <p class="footer-description">AI-native healthcare platform connecting patients, clinics, and continuous care
+            into one intelligent system.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link">For Patients</a></li>
+            <li><a href="#services" class="footer-link">For Clinics</a></li>
+            <li><a href="#ecosystem" class="footer-link">Ecosystem</a></li>
+            <li><a href="#" class="footer-link">Integrations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="casestudy.html" class="footer-link">Case Studies</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:support@healthy4u.world" class="footer-link">Support</a></li>
+            <li><a href="mailto:privacy@healthy4u.world" class="footer-link">Privacy</a></li>
+            <li><a href="mailto:billing@healthy4u.world" class="footer-link">Billing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Healthy4U. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
