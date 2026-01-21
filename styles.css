@@ -879,6 +879,8 @@ button {
   justify-content: center;
   font-weight: 700;
   font-size: var(--font-size-lg);
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .author-info {
