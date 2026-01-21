@@ -1362,6 +1362,19 @@ button {
   color: var(--color-text-primary);
 }
 
+/* Case Study Hero - Partner Logo */
+.case-partner-logo {
+  height: 60px;
+  width: auto;
+  margin: 0 auto var(--space-6);
+  display: block;
+  transition: transform var(--transition-base);
+}
+
+.case-partner-logo:hover {
+  transform: scale(1.05);
+}
+
 /* Results Section */
 .results-section {
   background: var(--color-bg-secondary);
