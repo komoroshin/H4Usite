@@ -404,6 +404,7 @@ button {
   width: 100%;
   height: auto;
   max-width: 600px;
+  border-radius: var(--radius-2xl);
   /* Optional: Add a subtle float animation or shadow */
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
   animation: float 6s ease-in-out infinite;
